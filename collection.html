@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="text-xs text-center offer" id="div">
+        <div class=" justify-center gap-4 flex p-1 ">
+        <h1 class="text-white">Sign Up GET 20% off on your first order</h1>
+        <i class="fa-solid fa-rectangle-xmark text-white" style="cursor:pointer;" id="x"></i>
+        </div>
+
+    </div>
+
+    <nav class="bg-blue-50 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10 one">
+        <h1>Nostra</h1>
+
+
+        
+        <svg id="menuicon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+          
+          
+          
+        <ul class="gap-10 text-gray-600 hidden md:flex">
+            <li><a href="index.html" class="hover:underline  hover:text-black">Home</a></li>
+            <li><a href="#" class="hover:underline hover:text-black">New Arrival</a></li>
+            <li><a href="#" class="hover:underline hover:text-black">Most Wanted</a></li>
+            <li><a href="collection.html" class="hover:underline hover:text-black">Collection</a></li>
+            <li><a href="#" class="hover:underline hover:text-black">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="sidenav" class="fixed z-20 top-0 transition-all duration-1000  section" style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p class="text-white inline cursor-pointer" id="closenav">X</p>
+        </div>
+        <ul class=" flex flex-col gap-5 p-5 text-gray-600">
+            <li><a href="index.html" class=" text-white hover:underline  hover:text-black">Home</a></li>
+            <li><a href="#" class="  text-white hover:underline hover:text-black">New Arrival</a></li>
+            <li><a href="#" class=" text-white hover:underline hover:text-black">Most Wanted</a></li>
+            <li><a href="collection.html" class=" text-white   hover:underline hover:text-black">Collection</a></li>
+            <li><a href="#" class="  text-white  hover:underline hover:text-black">Contact Us</a></li>
+        </ul>
+    
+    </section>
+
+    <div class="side">
+        <div class="side-one">
+            <form class="side-1">
+                <h2>Occasion</h2>
+                <input type="checkbox" name="check" value="summer">
+                <label>Summer</label><br>
+    
+                <input type="checkbox" name="check" value="party">
+                <label>Party</label><br>
+    
+                <input type="checkbox" name="check" value="beach">
+                <label>Beach</label><br>
+            </form>
+    
+            <form class="side-2">
+                <h2>Colours</h2>
+                <input type="checkbox" name="check" value="red">
+                <label>Red</label><br>
+    
+                <input type="checkbox" name="check" value="blue">
+                <label>Blue</label><br>
+    
+                <input type="checkbox" name="check" value="black">
+                <label>Black</label><br>
+    
+                <input type="checkbox" name="check" value="white">
+                <label>White</label><br>
+            </form>
+    
+            <form class="side-3">
+                <h2>Arrivals</h2>
+                <input type="checkbox" name="check" value="new">
+                <label>New</label><br>
+    
+                <input type="checkbox" name="check" value="old">
+                <label>Old</label><br>
+            </form>
+        </div>
+    
+        <div class="ver-line"></div>
+    
+        <div>
+            <input placeholder="search" id="search" class="photos-search">
+            <div class="photos">
+                <div class="onee">
+                    <div class="photos-1 shirt" data-occasion="party" data-color="blue" data-arrival="new">
+                        <img src="./images/n1.jpeg">
+                        <p class="text-xs">Shirt Party Skyblue</p>
+                    </div>
+                    <div class="photos-1 shirt" data-occasion="summer" data-color="white" data-arrival="new">
+                        <img src="./images/n8.jpeg">
+                        <p class="text-xs">Cotton Shirt</p>
+                    </div>
+                    <div class="photos-1 shirt" data-occasion="party" data-color="black" data-arrival="old">
+                        <img src="./images/n4.jpeg">
+                        <p class="text-xs">Party Shirt</p>
+                    </div>
+                </div>
+    
+                <div class="twoo">
+                    <div class="photos-1 shirt" data-occasion="summer" data-color="red" data-arrival="new">
+                        <img src="./images/f1.jpeg">
+                        <p class="text-xs">Floral Summer Shirt</p>
+                    </div>
+                    <div class="photos-1 shirt" data-occasion="summer" data-color="blue" data-arrival="new">
+                        <img src="./images/f2.jpeg">
+                        <p class="text-xs">Floral Summer Shirt</p>
+                    </div>
+                    <div class="photos-1 shirt" data-occasion="summer" data-color="white" data-arrival="old">
+                        <img src="./images/f3.jpeg">
+                        <p class="text-xs">Floral Summer Shirt</p>
+                    </div>
+                </div>
+    
+                <div class="threee">
+                    <div class="photos-1 shirt" data-occasion="summer" data-color="green" data-arrival="new">
+                        <img src="./images/f2.jpeg">
+                        <p class="text-xs">Summer</p>
+                    </div>
+                    <div class="photos-1 shirt" data-occasion="summer" data-color="white" data-arrival="old">
+                        <img src="./images/f7.jpeg">
+                        <p class="text-xs">Cotton Trouser</p>
+                    </div>
+                    <div class="photos-1 shirt" data-occasion="party" data-color="black" data-arrival="new">
+                        <img src="./images/f4.jpeg">
+                        <p class="text-xs">Party Wear</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="news">
+        <h1>Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input>
+        <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    
+    <div class="footer">
+        <h1>Nostra</h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="flex gap-10 mt-3">
+            <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+        </div>
+        <p class="mt-2">@ 2023 Nostra.com</p>
+    </div>
+    
+
+   <script src="./collection.js"></script>
+   
+</body>
+</html>
